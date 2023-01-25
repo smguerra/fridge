@@ -57,16 +57,10 @@ $(document).ready(function() {
 
   // 12. Create an "on-click" event attached to the "#clear" button id.
 
-  $(document).on("click", "#clear", function() {
+  $("#clear").on("click", function() {
+     // Inside the on-click event...13. Use the jQuery "empty()" method to clear the contents of the "#display" div.
+    $("#display").empty();
 
-
-  })
-
-  
-
-  // Inside the on-click event...
-
-  // 13. Use the jQuery "empty()" method to clear the contents of the "#display" div.
-  
+  });
 
 });
