@@ -42,22 +42,31 @@ $(document).ready(function() {
     var fridgeMagnet = $("<div>");
 
   // 9. Give each "fridgeMagnet" the following classes: "letter fridge-color".
-  fridgeMagnet.addClass("letter fridge-color"),
+  fridgeMagnet.addClass("letter fridge-color");
 
   // 10. Then chain the following code onto the "fridgeMagnet" variable: .text($(this).attr("data-letter"))
+  fridgeMagnet.text($(this).attr("data-letter"));
 
   // 11. Lastly append the fridgeMagnet variable to the "#display" div (provided);
+  $("#display").append(fridgeMagnet);
+});
 
   // Be sure to test that your code works for this major task, before proceeding to the next one!
-
   // MAJOR TASK #3: ATTACH ON-CLICK EVENTS TO "CLEAR" BUTTON
   // =================================================================================
 
   // 12. Create an "on-click" event attached to the "#clear" button id.
 
+  $(document).on("click", "#clear", function() {
+
+
+  })
+
+  
+
   // Inside the on-click event...
 
   // 13. Use the jQuery "empty()" method to clear the contents of the "#display" div.
-  });
+  
 
 });
