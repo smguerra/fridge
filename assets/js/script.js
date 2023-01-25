@@ -36,16 +36,13 @@ $(document).ready(function() {
 
   // 7. Create an "on-click" event attached to the ".letter-button" class.
   $(document).on("click", ".letter-button", function() {
-    
-    
-    
-  });
+    // Inside the on-click event...
 
-  // Inside the on-click event...
-
-  // 8. Create a variable called "fridgeMagnet" and set the variable equal to a new div.
+    // 8. Create a variable called "fridgeMagnet" and set the variable equal to a new div.
+    var fridgeMagnet = $("<div>");
 
   // 9. Give each "fridgeMagnet" the following classes: "letter fridge-color".
+  fridgeMagnet.addClass("letter fridge-color"),
 
   // 10. Then chain the following code onto the "fridgeMagnet" variable: .text($(this).attr("data-letter"))
 
@@ -61,5 +58,6 @@ $(document).ready(function() {
   // Inside the on-click event...
 
   // 13. Use the jQuery "empty()" method to clear the contents of the "#display" div.
+  });
 
 });
